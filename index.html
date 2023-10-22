@@ -4,51 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Despensa San Jeronimo</title>
-    <!-- CSS EXTERNO-->
-    <link rel="icon" href="./img/DESPENSA SAN JERONIMO (2).png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/estilos.css">
 
-    <!--Agregar el Favicon-->
+    <!--Favicon-->
+    <link rel="icon" href="./imagen/DESPENSA SAN JERONIMO (3) (4).ico">
 
+    <!--Link para iconos-->
+    <script src="https://kit.fontawesome.com/60c018b9b3.js" crossorigin="anonymous"></script>
+    
+    <!--Link bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    
 
 </head>
 <body>
     <header>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="Productos.html">Productos</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
-        <br><br>
-        <!-- imagen a reemplazar por definitiva -->
-        <img src="./img/imgminimarket.png" alt="Despensa de Don Jerónimo" width="100%" >
-        <br><br>
-
+        <img class="logo" src="./imagen/LOGO DESPENSA.png" alt="logo">
+           <span id="abrir" class="abrir-menu">&#9776;</span>
+               <nav class="nav" id="nav">
+           <span id="cerrar" class="cerrar-menu">X</span>
+                   <ul class="nav-list">
+                     <li><a href="./index.html">Inicio</a></li>
+                     <li><a href="./productos.html">Productos</a></li>
+                     <li><a href="./contacto.html">Contacto</a></li>
+                     <li><a href="./ubicacion.html">Ubicacion</a></li>
+                   </ul>
+                </nav>          
     </header>
 
-
-
     <main>
+        <div> 
+            <img id="frente" src="./imagen/f1.png">
+        </div>  
+    </main>
+
+
+    <aside>
         <!-- Primer sección -->
         <section>
-            <h1>Te damos la bienvenida a nuestra despensa</h1>
-            <br><br>
-            <h3>Tenemos lo que estás necesitando</h3>
-            <br><br>
-            <h4>Productos destacados</h4>
-            <br><br>
-            <!-- carousel (fotos a modo de representar el espacio que ocuparía el mismo) -->
-            <img src="./img/650_1200.jpg" alt="alimentos" width="15%">
-            <img src="./img/alimentos-con-sodio-papafritas-snaks-2018.jpg" alt="alimentos" width="15%">
-            <img src="./img/f1280x720-8199_139874_5050.jpg" 
-            alt="alimentos" width="15%">
-            <img src="./img/healthy-grocery-list-13-pantry-essentials_ft_ES-1024x683.jpg.jpg" alt="alimentos" width="15%">
-            <img src="./img/QuakerMX0030_MOBILE-750x480.jpg" alt="alimentos" width="15%">
-            <br><br>
-            <!-- botón para ir a productos/categorias -->
-            <a href="Productos">Ver más Productos</a>
-            <br><br><br>
-            <hr>
+        <!--Contenedor del div-->
+        <div class="titulo"><h2>PRODUCTOS</h2></div>
+        
+        <div class="contenedor">
+            <!--contenedor de tarjeta-->
+            <div class="tarjeta">
+                <img src="./imagen/MERIENDA.jpg" alt="merienda">
+                <div class="textocard text-center">
+                  <a href="#" class="btn btn-outline-warning btn-lg">Desayunos/Meriendas</a>    
+                </div>
+            </div>
+       
+
+             <!--contenedor de tarjeta 2-->
+            
+                <div class="tarjeta">
+                    <img src="./imagen/ALIMENTOS.jpg" alt="alimentos">
+                    <div class="textocard text-center">
+                        <a href="#" class="btn btn-outline-warning btn-lg">Alimentos</a>    
+                    </div>
+                </div>
+
+           
+             
+
+             <!--contenedor de tarjeta 3-->
+            
+                <div class="tarjeta">
+                    <img src="./imagen/BEBIDAS.jpg" alt="bebidas">
+                    <div class="textocard text-center">
+                        <a href="#" class="btn btn-outline-warning btn-lg">Bebidas</a>    
+                    </div>
+                </div>
+
+        </div>    
         </section>
+
+
 
         <!-- Segunda sección -->
         <section>
@@ -78,18 +111,34 @@
             <br><br>
         </section>
 
-    </main>
+    </aside>
 
 
 
 
-    <footer>
-        <!-- Logo, redes sociales, nú
-            mero de telefono, mail, enlace a menu/productos (?) -->
+    <footer class="pie">
+        <!-- Logo, redes sociales, número de telefono, mail, enlace a menu/productos (?) -->
+        <div>
+            <div>
+                <span id="ubicacion"><i class="fa-solid fa-street-view" style="width: 30px; height: 30px;"></i>San Jeronimo 4108</span>
+            </div>
+            
+            <div>
+                <span class="instagram"><i class="fa-brands fa-instagram" style="width: 30px; height: 30px;"></i></span>
+                <span class="facebook"><i class="fa-brands fa-square-facebook"></i></span>
+            </div>
+            
+            
 
+          </div>
+
+          
     </footer>
 
 
 
 <script src="./js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+</body>
+</html>
