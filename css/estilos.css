@@ -195,15 +195,31 @@ h3{
 
 .pie{
     background-color: black;
-    padding: 40px;
+    padding: 30px;
 }
 
 #ubicacion{
-  color: white;
+  color: rgb(255, 255, 255);
   margin:10px;
-  width:200px;
-  height: 200px;
+  justify-content: right;
 }
+
+.redes{
+    height: 50px;
+    padding: 10px;
+    
+    
+
+}
+.sociales {
+display: flex;
+justify-content: center;
+right: 1%;
+bottom: 50%;
+}
+
+
+
 
 
 
