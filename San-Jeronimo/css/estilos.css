@@ -214,3 +214,29 @@ h3{
     color:white;
     background-color: black;
 }
+
+/* CSS DE UBICACION*/
+.contenedor-ubicacion{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    background-image: url("../imagen/Fondo2.png");
+        
+}
+
+.left{
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.left h1{color: black; font-size: 150%; font-family: 'Montserrat', sans-serif; font-style: italic;}
+.left p{color: black; font-size: 30px; font-family: 'Montserrat', sans-serif;}
+
+.ubicacion{ 
+    text-align: center;
+    color:rgb(64, 127, 132);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin:10px;
+}
