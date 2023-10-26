@@ -21,7 +21,7 @@
 
 <body>
     <header>
-        <img class="logo" src="./imagen/LOGO DESPENSA.png" alt="logo">
+        <img class="logo" src="./imagen/logo1.png" alt="logo">
            <span id="abrir" class="abrir-menu">&#9776;</span>
                <nav class="nav" id="nav">
            <span id="cerrar" class="cerrar-menu">X</span>
@@ -35,7 +35,6 @@
     </header>
 
 
-    
     <main>
         <div class="titulo">
             <h2>CONTACTO</h2>
@@ -50,42 +49,43 @@
 
    
 
-        <form class="row g-3 form">
+        <form  action=" " method="POST" id="form"  class="row g-3 form">
             <div class="col-md-6">
                 <div class="col">
-                  <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                  <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" id="name">
                 </div>
             </div>
                 <div class="col-md-6">
                     <div class="col">
-                      <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                      <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" id="apellidos">
                     </div>
               </div>
 
              
                 <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder="DNI" aria-label="DNI">
+                  <input type="text" class="form-control" placeholder="DNI" aria-label="DNI" id="dni">
                 </div>
                 <div class="col-md-6">
-                    <input type="text" class="form-control" placeholder="Dirección" aria-label="direccion">
+                    <input type="text" class="form-control" placeholder="Dirección" aria-label="direccion" id="direccion">
                   </div>
                 <div class="input-group mb-3">
                   <span class="input-group-text"><i class="fa-solid fa-phone"></i></span>
-                  <input type="text" class="form-control" placeholder="Teléfono" aria-label="Teléfono">
+                  <input type="text" class="form-control" placeholder="Teléfono" aria-label="Teléfono" id="telefono">
                 </div>
 
               <div class="input-group mb-3">
                 <span class="input-group-text"><i class="fa-regular fa-envelope"></i></span>
-                <input type="email" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+                <input type="email" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1" id="email">
               </div>
 
               <div class="mb-3">
-                <textarea class="form-control" placeholder="Comentarios" rows="3"></textarea>
+                <textarea class="form-control" placeholder="Comentarios" rows="3" id="comentarios"></textarea>
               </div>
 
 
             <div class="d-grid gap-2 col-6 mx-auto">
-                <button id="btn-enviar" type="button" class="btn btn-success">Enviar</button>
+                <button id="btn-enviar" type="submit" class="btn btn-success">Enviar</button>
+                <p class="warnings" id="warnings"></p>
             </div>
           </form>
         </div>
@@ -94,19 +94,23 @@
 
     </main>
 
+  
+        
   <footer class="pie">  
       <div class="sociales">
           <a href="#" target="_blank">
-              <img src="./imagen/icon_insta.png" alt="Instagram" class="redes">
+              <img src="./imagen/instaama.png" alt="Instagram" class="redes">
           </a>
 
           <span id="ubicacion"><i class="fa-solid fa-street-view fa-2x"></i> San Jeronimo 4108</span>         
           
           <a href="#" target="_blank"> 
-              <img src="./imagen/icon_face.png" alt="Facebook"   class="redes">
+              <img src="./imagen/faceama.png" alt="Facebook"   class="redes">
           </a>       
       </div>
   </footer>
+
+   
 
     <script src="./js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
